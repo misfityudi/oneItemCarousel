@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import OneItemCarousel from './components/oneItemCarousel.jsx';
+import OneItemCarousel from './components/oneItemCarousel';
 
 class App extends Component {
   render() {

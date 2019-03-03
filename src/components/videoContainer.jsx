@@ -1,6 +1,6 @@
 import React from "react";
 
-const ItemStyle = {
+const VideoContainerStyle = {
   width: "90%",
   height: "400px",
   position: "relative",
@@ -43,7 +43,7 @@ const TitleStyle = {
 const PrimaryTitleStyle = {
   display: "flex",
   flexDirection: "column",
-  justifyItems: "space-between",
+  justifyContent: "space-between",
   alignItems: "flex-start",
   justifySelf: "flex-start"
 };
@@ -71,12 +71,12 @@ const TimeStampStyle = {
   backgroundColor: "#db3838"
 };
 
-export default class Item extends React.Component {
+export default class VideoContainer extends React.Component {
   render() {
     return (
       <div
-        className="Item"
-        style={ItemStyle}
+        className="VideoContainer"
+        style={VideoContainerStyle}
       >
         <div className="ImageContainer" style={ImageContainerStyle}>
           <img src={this.props.src} alt={this.props.videoTitle}style={ImageStyle}/>
@@ -99,7 +99,7 @@ export default class Item extends React.Component {
   }
 }
 
-Item.defaultProps = {
+VideoContainer.defaultProps = {
   videoTitle: "Chile vs Argentina",
   loungeName: "Chile Ultras",
   src: "./Assets/El-Clasico.jpg"
